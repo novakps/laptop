@@ -36,8 +36,8 @@ echo "Installing Postgres, a good open source relational database ..."
   successfully brew install postgres --no-python
   successfully initdb /usr/local/var/postgres -E utf8
 
-echo "Installing Redis, a good key-value database ..."
-  successfully brew install redis
+#echo "Installing Redis, a good key-value database ..."
+#  successfully brew install redis
 
 echo "Installing ack, for searching the contents of files ..."
   successfully brew install ack
@@ -70,11 +70,14 @@ echo "Installing RVM (Ruby Version Manager) and Ruby 1.9.3-p327, which becomes t
 echo "Installing critical Ruby gems for Rails development ..."
   successfully gem install bundler rails pg foreman thin --no-rdoc --no-ri
 
-echo "Installing standalone Heroku CLI client."
-  successfully brew install heroku-toolbelt
+#echo "Installing standalone Heroku CLI client."
+#  successfully brew install heroku-toolbelt
 
-echo "Installing the heroku-config plugin for pulling config variables locally to be used as ENV variables ..."
-  successfully heroku plugins:install git://github.com/ddollar/heroku-config.git
+#echo "Installing the heroku-config plugin for pulling config variables locally to be used as ENV variables ..."
+#  successfully heroku plugins:install git://github.com/ddollar/heroku-config.git
+
+echo "Installing emacs ..."
+  successfully brew install emacs --cocoa --sgrb --HEAD
 
 echo "Your shell will now restart in order for changes to apply."
   exec $SHELL -l
